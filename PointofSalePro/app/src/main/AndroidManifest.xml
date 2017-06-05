@@ -16,6 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TableActivity" />
+        <activity android:name=".ItemActivity"></activity>
+        <activity android:name="pop1"
+        android:theme="@style/AppTheme.CustomTheme">
+        </activity>
+        <activity android:name="pop2"
+            android:theme="@style/AppTheme.CustomTheme">
+        </activity>
+        <activity android:name="pop3"
+            android:theme="@style/AppTheme.CustomTheme">
+        </activity>
+        <activity android:name="pop4"
+            android:theme="@style/AppTheme.CustomTheme">
+        </activity>
     </application>
 
 </manifest>
