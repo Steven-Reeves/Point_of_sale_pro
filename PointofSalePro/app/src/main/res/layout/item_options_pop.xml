@@ -23,18 +23,30 @@
         android:layout_marginTop="45dp"
         android:text="Options for ..." />
 
-    <ScrollView
-        android:layout_width="match_parent"
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/optionsLabel"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:minHeight="250dp">
+        android:text="CheckBox"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignStart="@+id/btn_Done" />
 
-        <ListView
-            android:id="@+id/optionsList"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:minHeight="180dp"></ListView>
-    </ScrollView>
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/optionsLabel"
+        android:layout_alignStart="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/checkBox2" />
+
 </RelativeLayout>
