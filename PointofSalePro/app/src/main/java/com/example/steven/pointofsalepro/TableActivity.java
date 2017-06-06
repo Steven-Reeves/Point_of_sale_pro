@@ -30,79 +30,33 @@ public class TableActivity extends AppCompatActivity {
         Button button8 = (Button) findViewById(R.id.btn_table8);
         Button button9 = (Button) findViewById(R.id.btn_table9);
 
-        TableText.setText("Welcome, " + ServerName + " Choose a Table");
+        TableText.setText("Welcome, " + ServerName + "! Choose a Table:");
 
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View view) {
-                Intent intent = new Intent(TableActivity.this, ItemActivity.class);
-                startActivity(intent);
-            }
-        });
+        button1.setOnClickListener(new TableSelectionListener(1));
+        button2.setOnClickListener(new TableSelectionListener(2));
+        button3.setOnClickListener(new TableSelectionListener(3));
+        button4.setOnClickListener(new TableSelectionListener(4));
+        button5.setOnClickListener(new TableSelectionListener(5));
+        button6.setOnClickListener(new TableSelectionListener(6));
+        button7.setOnClickListener(new TableSelectionListener(7));
+        button8.setOnClickListener(new TableSelectionListener(8));
+        button9.setOnClickListener(new TableSelectionListener(9));
+    }
 
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View view) {
-                Intent intent = new Intent(TableActivity.this, ItemActivity.class);
-                startActivity(intent);
-            }
-        });
+    private class TableSelectionListener implements View.OnClickListener {
+        private int m_tableNum = 0;
 
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View view) {
-                Intent intent = new Intent(TableActivity.this, ItemActivity.class);
-                startActivity(intent);
-            }
-        });
+        public TableSelectionListener(int tableNum) {
+            m_tableNum = tableNum;
+        }
 
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View view) {
-                Intent intent = new Intent(TableActivity.this, ItemActivity.class);
-                startActivity(intent);
-            }
-        });
+        @Override
+        public void onClick (View view) {
+            Intent intent = new Intent(TableActivity.this, ItemActivity.class);
 
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View view) {
-                Intent intent = new Intent(TableActivity.this, ItemActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View view) {
-                Intent intent = new Intent(TableActivity.this, ItemActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        button7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View view) {
-                Intent intent = new Intent(TableActivity.this, ItemActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        button8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View view) {
-                Intent intent = new Intent(TableActivity.this, ItemActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        button9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View view) {
-                Intent intent = new Intent(TableActivity.this, ItemActivity.class);
-                startActivity(intent);
-            }
-        });
-
+            // Add the table number to the intent's extra data
+            intent.putExtra("TableNum", m_tableNum);
+            startActivity(intent);
+        }
     }
 }
