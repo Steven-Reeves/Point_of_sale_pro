@@ -13,13 +13,43 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = (Button) findViewById(R.id.btn_server1);
+        Button button1 = (Button) findViewById(R.id.btn_server1);
+        Button button2 = (Button) findViewById(R.id.btn_server2);
+        Button button3 = (Button) findViewById(R.id.btn_server3);
+        Button button4 = (Button) findViewById(R.id.btn_server4);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View view) {
                 Intent intent = new Intent(MainActivity.this, TableActivity.class);
                 intent.putExtra("ServerName", "Toni");
+                startActivity(intent);
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View view) {
+                Intent intent = new Intent(MainActivity.this, TableActivity.class);
+                intent.putExtra("ServerName", "Jake");
+                startActivity(intent);
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View view) {
+                Intent intent = new Intent(MainActivity.this, TableActivity.class);
+                intent.putExtra("ServerName", "Steven");
+                startActivity(intent);
+            }
+        });
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View view) {
+                Intent intent = new Intent(MainActivity.this, TableActivity.class);
+                intent.putExtra("ServerName", "Cathy");
                 startActivity(intent);
             }
         });
