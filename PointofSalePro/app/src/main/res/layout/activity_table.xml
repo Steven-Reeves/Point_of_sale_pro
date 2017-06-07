@@ -25,89 +25,100 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <GridLayout
-        android:layout_width="375dp"
-        android:layout_height="414dp"
-        android:layout_marginRight="7dp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="7dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        tools:layout_editor_absoluteX="44dp">
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        tools:layout_editor_absoluteX="69dp">
 
         <Button
             android:id="@+id/btn_table3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_column="2"
             android:layout_row="0"
-            android:text="Table 3" />
+            android:text="Table 3"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <Button
             android:id="@+id/btn_table2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_column="1"
             android:layout_row="0"
-            android:text="Table 2" />
+            android:text="Table 2"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <Button
             android:id="@+id/btn_table4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_column="0"
             android:layout_row="1"
-            android:text="Table 4" />
+            android:text="Table 4"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <Button
             android:id="@+id/btn_table6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_column="2"
             android:layout_row="1"
-            android:text="Table 6" />
+            android:text="Table 6"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <Button
             android:id="@+id/btn_table5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_column="1"
             android:layout_row="1"
-            android:text="Table 5" />
+            android:text="Table 5"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <Button
             android:id="@+id/btn_table7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_column="0"
             android:layout_row="2"
-            android:text="Table 7" />
+            android:text="Table 7"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <Button
             android:id="@+id/btn_table9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_column="2"
             android:layout_row="2"
-            android:text="Table 9" />
+            android:text="Table 9"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <Button
             android:id="@+id/btn_table1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_column="0"
             android:layout_row="0"
             android:elevation="0dp"
-            android:text="Table 1" />
+            android:text="Table 1"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <Button
             android:id="@+id/btn_table8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_column="1"
             android:layout_row="2"
-            android:text="Table 8" />
+            android:text="Table 8"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
     </GridLayout>
 </android.support.constraint.ConstraintLayout>
